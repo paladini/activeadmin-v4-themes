@@ -1,0 +1,34 @@
+name: Submit a theme
+description: Suggest a theme with verified ActiveAdmin 4 support.
+title: "Add theme: "
+labels:
+  - new-theme
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project URL
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+  - type: input
+    id: activeadmin-version
+    attributes:
+      label: ActiveAdmin version support
+      placeholder: 4.0.0.beta22+
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Compatibility evidence
+      description: Link to documentation, tests, a demo, or a maintainer statement.
+    validations:
+      required: true
+  - type: textarea
+    id: installation
+    attributes:
+      label: Installation command
+      description: Provide the exact commands users should run.
+    validations:
+      required: true
